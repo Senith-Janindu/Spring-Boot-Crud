@@ -22,7 +22,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/getUser")
+    @GetMapping("/getUsers")
     public List<UserDTO> getUsers(){
         return userService.getAllUsers();
     }
